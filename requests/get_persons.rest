@@ -1,1 +1,1 @@
-GET http://localhost:3001/api/persons
+GET https://fullstack-phonebook-ogia.onrender.com/api/persons
