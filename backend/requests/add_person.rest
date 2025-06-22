@@ -1,7 +1,7 @@
-GET https://fullstack-phonebook-ogia.onrender.com/api/persons
+GET http://localhost:3001/api/persons
 
 ###
-POST https://fullstack-phonebook-ogia.onrender.com/api/persons
+POST http://localhost:3001/api/persons
 Content-Type: application/json
 
 {
@@ -10,4 +10,4 @@ Content-Type: application/json
 }
 
 ###
-GET https://fullstack-phonebook-ogia.onrender.com/api/persons
+GET http://localhost:3001/api/persons
