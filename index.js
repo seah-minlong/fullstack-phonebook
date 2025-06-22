@@ -12,6 +12,7 @@ app.use(
 	morgan(":method :url :status :res[content-length] - :response-time ms :content")
 );
 app.use(cors());
+app.use(express.static("dist"));
 
 let persons = [
 	{
@@ -66,7 +67,7 @@ app.delete("/api/persons/:id", (request, response) => {
 	const id = request.params.id;
 	const person = persons.find((person) => person.id === id);
 	persons = persons.filter((person) => person.id !== id);
-	
+
 	console.log(person);
 	if (!person) {
 		response.status(404).end();
